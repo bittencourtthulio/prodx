@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="Fluxo do prodx: o chamado entra pela esquerda e passa pela triagem. Sem gatilho disparado, segue pelo caminho curto direto ao veredito. Com gatilho, entra na avaliacao completa, que percorre entendimento do pedido, verificacao de existencia e avaliacao. Ambos os caminhos chegam aos quatro vereditos: ja existe, nao fazer e fazer outra coisa encerram o pedido; fazer segue adiante. Todo veredito passa pelo portao da assinatura humana, e so depois dele o briefing sai para o runx e para o sprintx.">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#9aa4b0"/>
+    </marker>
+    <marker id="seta-curta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5fbf8f"/>
+    </marker>
+    <marker id="seta-fim" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e0a758"/>
+    </marker>
+  </defs>
+
+  <style>
+    .cx { fill: #161a20; stroke: #9aa4b0; stroke-width: 1.5; }
+    .cx-triagem { fill: #161a20; stroke: #5fbf8f; stroke-width: 2.5; }
+    .cx-encerra { fill: #2a2119; stroke: #e0a758; stroke-width: 1.5; }
+    .cx-segue { fill: #17271f; stroke: #5fbf8f; stroke-width: 2; }
+    .cx-portao { fill: #161a20; stroke: #e6eaee; stroke-width: 2.5; }
+    .t { font-family: Helvetica, Arial, sans-serif; fill: #e6eaee; }
+    .tt { font-size: 15px; font-weight: bold; }
+    .ts { font-size: 12.5px; }
+    .tm { font-size: 11.5px; fill: #9aa4b0; }
+    .tl { font-size: 11.5px; fill: #5fbf8f; font-weight: bold; }
+    .tf { font-size: 11.5px; fill: #e0a758; font-weight: bold; }
+    .ln { stroke: #9aa4b0; stroke-width: 1.5; fill: none; }
+    .ln-curta { stroke: #5fbf8f; stroke-width: 2.5; fill: none; }
+    .div { stroke: #4a525c; stroke-width: 1; stroke-dasharray: 5 4; fill: none; }
+  </style>
+
+  <!-- entrada -->
+  <text class="t tm" x="16" y="150">entra</text>
+  <rect class="cx" x="16" y="160" width="120" height="54" rx="6"/>
+  <text class="t tt" x="76" y="183" text-anchor="middle">Chamado</text>
+  <text class="t tm" x="76" y="201" text-anchor="middle">cliente · suporte</text>
+
+  <line class="ln" x1="136" y1="187" x2="182" y2="187" marker-end="url(#seta)"/>
+
+  <!-- triagem -->
+  <rect class="cx-triagem" x="184" y="150" width="132" height="74" rx="6"/>
+  <text class="t tt" x="250" y="180" text-anchor="middle">P0 Triagem</text>
+  <text class="t tm" x="250" y="199" text-anchor="middle">8 gatilhos</text>
+  <text class="t tm" x="250" y="214" text-anchor="middle">segundos, sem pasta</text>
+
+  <!-- caminho curto -->
+  <path class="ln-curta" d="M 250 150 L 250 92 L 700 92 L 700 138" marker-end="url(#seta-curta)"/>
+  <text class="t tl" x="330" y="84">caminho curto — nenhum gatilho disparou</text>
+  <text class="t tm" x="330" y="112">a maioria dos chamados: linha unica no INDICE.md, veredito imediato</text>
+
+  <!-- caminho longo -->
+  <line class="ln" x1="316" y1="187" x2="360" y2="187" marker-end="url(#seta)"/>
+  <text class="t tm" x="322" y="176">1+ gatilho</text>
+
+  <rect class="cx" x="362" y="248" width="500" height="118" rx="8" fill="none" stroke="#4a525c" stroke-width="1"/>
+  <text class="t tm" x="372" y="266">Avaliacao completa</text>
+
+  <rect class="cx" x="362" y="160" width="118" height="54" rx="6"/>
+  <text class="t ts" x="421" y="181" text-anchor="middle">P2 Pedido</text>
+  <text class="t tm" x="421" y="199" text-anchor="middle">problema ≠ solucao</text>
+
+  <line class="ln" x1="480" y1="187" x2="516" y2="187" marker-end="url(#seta)"/>
+
+  <rect class="cx" x="518" y="160" width="118" height="54" rx="6"/>
+  <text class="t ts" x="577" y="181" text-anchor="middle">P3 Existencia</text>
+  <text class="t tm" x="577" y="199" text-anchor="middle">ja existe?</text>
+
+  <line class="ln" x1="636" y1="187" x2="672" y2="187" marker-end="url(#seta)"/>
+
+  <rect class="cx" x="674" y="160" width="118" height="54" rx="6"/>
+  <text class="t ts" x="733" y="181" text-anchor="middle">P4 Avaliacao</text>
+  <text class="t tm" x="733" y="199" text-anchor="middle">escopo minimo</text>
+
+  <path class="ln" d="M 733 214 L 733 236 L 700 236 L 700 262" marker-end="url(#seta)"/>
+
+  <!-- P5 vereditos -->
+  <rect class="cx" x="596" y="264" width="208" height="44" rx="6"/>
+  <text class="t tt" x="700" y="292" text-anchor="middle">P5 Veredito</text>
+
+  <line class="div" x1="16" y1="330" x2="984" y2="330"/>
+  <text class="t tf" x="16" y="352">tres vereditos encerram o pedido</text>
+  <text class="t tl" x="700" y="352">um segue</text>
+
+  <path class="ln" d="M 660 308 L 660 322 L 120 322 L 120 366" marker-end="url(#seta)"/>
+  <path class="ln" d="M 660 308 L 660 322 L 330 322 L 330 366" marker-end="url(#seta)"/>
+  <path class="ln" d="M 660 308 L 660 322 L 520 322 L 520 366" marker-end="url(#seta)"/>
+  <path class="ln-curta" d="M 745 308 L 745 322 L 790 322 L 790 366" marker-end="url(#seta-curta)"/>
+
+  <rect class="cx-encerra" x="40" y="368" width="160" height="50" rx="6"/>
+  <text class="t ts" x="120" y="390" text-anchor="middle">ja_existe</text>
+  <text class="t tm" x="120" y="407" text-anchor="middle">texto ao cliente</text>
+
+  <rect class="cx-encerra" x="250" y="368" width="160" height="50" rx="6"/>
+  <text class="t ts" x="330" y="390" text-anchor="middle">nao_fazer</text>
+  <text class="t tm" x="330" y="407" text-anchor="middle">ativo permanente</text>
+
+  <rect class="cx-encerra" x="440" y="368" width="160" height="50" rx="6"/>
+  <text class="t ts" x="520" y="390" text-anchor="middle">fazer_outra_coisa</text>
+  <text class="t tm" x="520" y="407" text-anchor="middle">problema reformulado</text>
+
+  <rect class="cx-segue" x="710" y="368" width="160" height="50" rx="6"/>
+  <text class="t ts" x="790" y="390" text-anchor="middle">fazer</text>
+  <text class="t tm" x="790" y="407" text-anchor="middle">escopo minimo</text>
+
+  <!-- portao assinatura -->
+  <line class="ln" x1="600" y1="393" x2="704" y2="393" marker-end="url(#seta)"/>
+  <text class="t tm" x="604" y="384">reformulado</text>
+
+  <path class="ln-curta" d="M 790 418 L 790 440" marker-end="url(#seta-curta)"/>
+
+  <rect class="cx-portao" x="640" y="442" width="300" height="46" rx="6"/>
+  <text class="t tt" x="790" y="463" text-anchor="middle">Portao — assinatura humana</text>
+  <text class="t tm" x="790" y="480" text-anchor="middle">a skill recomenda; quem assina e pessoa</text>
+
+  <!-- saidas -->
+  <path class="ln-curta" d="M 640 465 L 470 465" marker-end="url(#seta-curta)"/>
+  <rect class="cx-segue" x="300" y="442" width="166" height="46" rx="6"/>
+  <text class="t ts" x="383" y="463" text-anchor="middle">BRIEFING.md</text>
+  <text class="t tm" x="383" y="480" text-anchor="middle">sem decisao tecnica</text>
+
+  <path class="ln-curta" d="M 300 465 L 210 465" marker-end="url(#seta-curta)"/>
+  <rect class="cx" x="40" y="442" width="166" height="46" rx="6"/>
+  <text class="t ts" x="123" y="463" text-anchor="middle">runx · sprintx</text>
+  <text class="t tm" x="123" y="480" text-anchor="middle">correcao · feature</text>
+</svg>
