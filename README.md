@@ -16,6 +16,16 @@
   <img alt="licenca MIT" src="https://raw.githubusercontent.com/bittencourtthulio/prodx/main/.github/assets/badge-license.svg">
 </p>
 
+<p>
+  <a href="https://bittencourtthulio.github.io/expxdev/#prodx"><strong>📘 Documentação do método</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://bittencourtthulio.github.io/expxdev/#prodx">Gatilhos e vereditos</a>
+  &nbsp;·&nbsp;
+  <a href="https://bittencourtthulio.github.io/expxdev/#ecossistema">O ecossistema</a>
+  &nbsp;·&nbsp;
+  <a href="https://bittencourtthulio.github.io/expxdev/#schema">Contratos</a>
+</p>
+
 <strong>A camada de produto do método Expx</strong> — decide se o pedido<br>
 vira trabalho, para <a href="https://claude.com/claude-code">Claude Code</a> e <a href="https://opencode.ai">OpenCode</a>.
 
