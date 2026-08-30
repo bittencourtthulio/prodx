@@ -45,6 +45,7 @@ O método Expx é um conjunto de skills que se compõem, instaladas e mantidas p
 | Peça | Papel | Relação com a `prodx` |
 |---|---|---|
 | **[expxdev](https://github.com/bittencourtthulio/expxdev)** | o CLI: instala, atualiza e diagnostica o ecossistema, e sobe o painel de operação | é quem instala esta skill (`npx expxdev init`) |
+| **[buildx](https://github.com/bittencourtthulio/buildx)** | orquestra um projeto inteiro, da descrição ao sistema pronto | invoca a `prodx` duas vezes: no B1 em modo greenfield (P0 e P3 pulados, veredito auto-assinado com `provisorio:true`) e no B6 como auditor do construído; é dependência obrigatória dele |
 | **[sprintx](https://github.com/bittencourtthulio/sprintx)** | **Build** — feature nova, F1…F6 | recebe o `BRIEFING.md` assinado como entrada da F1; o plano referencia o `PD-ID` de origem |
 | **[runx](https://github.com/bittencourtthulio/runx)** | **Run** — ocorrência em produção, E1…E5 | caminho mais comum: o `BRIEFING.md` vira o `00-OCORRENCIA.md`, já com o tipo classificado |
 | **[legadox](https://github.com/bittencourtthulio/legadox)** | **camada** de segurança para código legado | as zonas de risco do `PERFIL.md` viram o gatilho G6 da triagem |
@@ -55,7 +56,7 @@ O método Expx é um conjunto de skills que se compõem, instaladas e mantidas p
 
 **Camadas** (`prodx`, `memox`, `stackx`, `legadox`) sozinhas não fazem nada — elas modificam o comportamento da `sprintx` e da `runx`. Sem `docs/produto/` construído, nada muda: as irmãs se comportam como se comportariam sem esta skill.
 
-A `prodx` é a única que roda **antes** de todas as outras: ela decide *se* existe trabalho; as demais tratam de *como* fazê-lo.
+A `prodx` é a única que roda **antes** de todas as outras: ela decide *se* existe trabalho; as demais tratam de *como* fazê-lo. A `buildx` é o caminho inverso: é a única peça que **depende** de outras — sem `prodx`, `sprintx` e `mergex` instaladas, ela não roda.
 
 Detalhes do ecossistema inteiro no [README do expxdev](https://github.com/bittencourtthulio/expxdev).
 
