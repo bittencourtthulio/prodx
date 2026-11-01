@@ -1,6 +1,6 @@
 ---
 name: prodx
-description: Use ao receber qualquer pedido cru — chamado de suporte, solicitação de cliente, reclamação, ideia de funcionalidade, "seria bom se o sistema fizesse X", pedido de tela, relatório ou campo novo — e sempre que a pergunta for se vale a pena fazer algo, se algo já existe no sistema, ou se um pedido deve virar trabalho. Decide SE há trabalho antes de qualquer planejamento: roda antes do sprintx e do runx, faz a triagem do pedido, verifica se o que foi pedido já existe, avalia e emite um veredito com evidência para assinatura humana. Use mesmo sem a palavra prodx.
+description: "Use ao receber qualquer pedido cru — chamado de suporte, solicitação de cliente, reclamação, ideia de funcionalidade, \"seria bom se o sistema fizesse X\", pedido de tela, relatório ou campo novo — e sempre que a pergunta for se vale a pena fazer algo, se algo já existe no sistema, ou se um pedido deve virar trabalho. Decide SE há trabalho antes de qualquer planejamento: roda antes do sprintx e do runx, faz a triagem do pedido, verifica se o que foi pedido já existe, avalia e emite um veredito com evidência para assinatura humana. Use mesmo sem a palavra prodx."
 ---
 
 # prodx

@@ -1,5 +1,5 @@
 ---
-description: P0 do prodx — triagem de um chamado recém-chegado: roda os oito gatilhos e decide entre veredito direto e avaliação completa. Seco e rápido, sem criar pasta.
+description: "P0 do prodx — triagem de um chamado recém-chegado: roda os oito gatilhos e decide entre veredito direto e avaliação completa. Seco e rápido, sem criar pasta."
 ---
 
 Use a skill `prodx`, etapa **P0**, seguindo `references/00-triagem.md`.
